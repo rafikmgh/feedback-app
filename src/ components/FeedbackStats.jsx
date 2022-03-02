@@ -2,7 +2,7 @@
 import { useContext } from 'react'
 import FeedbackContext from '../Context/FeedbackContext'
 
-const FeedbackStats = ({}) => {
+const FeedbackStats = () => {
   const{feedback} = useContext(FeedbackContext)
     let average = feedback.reduce((acc , cur) => {
         return acc + cur.rating 
